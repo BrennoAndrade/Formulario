@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><strong>Aluno:</strong>Brenno de Andrade Xavier</td>
+        </tr>
+        <tr><td><strong>Matrícula:</strong>20221202412330088</td></tr>
+    </table>
+    <form action="CadastraCliente.php" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <table>
+                <tr>
+                <td><label>Nome:</label></td>
+                <td><input type="text" name="nome" id="nome" minlength="2" maxlength="50" autofocus></td>
+                <td><input type="hidden" name="coluna1" id="coluna1"></td>
+                <td><input type="hidden" name="colun1" id="colun1"></td>
+                <td><input type="hidden" name="colu1" id="colu1"></td>
+                <td><input type="hidden" name="col1" id="col1"></td>
+                </tr>
+                <tr>
+                    <td><label>Data Nasc:</label></td>
+                    <td><input type="date" name="data_nasc" id="data_nascimento"></td>
+                    <td><label>Sexo:</label></td>
+                        <td><label>
+                            <input type="radio" name="sexo" value="masculino">Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" value="feminino">Feminino
+                        </label></td>
+                        <td><label>Gênero</label></td>
+                            <td><select id="genero">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Trânsgenero</option>
+                            <option>Não-Binário</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label>Celular:</label></td>
+                    <td><input type="tel" name="celular" id="celular_1"></td>
+                    <td><label>Celular 2:</label></td>
+                    <td><input type="tel" name="celular" id="celular_2"></td>
+                    <td><input type="hidden" name="colun6" id="colun6"></td>
+                    <td><input type="hidden" name="colu6" id="colu6"></td>
+                    
+                </tr>
+                <tr>
+                    <td><label>Email:</label></td>
+                    <td><input type="email" name="email" id="email_1"></td>
+                    <td><label>Email 2:</label></td>
+                    <td><input type="email" name="email" id="email_2"></td>
+                    <td><input type="hidden" name="colun7" id="colun7"></td>
+                    <td><input type="hidden" name="colu7" id="colu7"></td>
+                </tr>
+                <tr>
+                    <td><label>Nome Mãe:</label></td>
+                    <td><input type="text" name="nome" id="nome_mae"></td>
+                    <td><label>CPF:</label></td>
+                    <td><input type="text"  pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" name="cpf" id="cpf_mae"></td>
+                    <td><input type="hidden" name="colun8" id="colun8"></td>
+                    <td><input type="hidden" name="colu8" id="colu8"></td>
+                </tr>
+                <tr>
+                    <td><label>Nome Pai:</label></td>
+                    <td><input type="text" name="nome" id="nome_pai"></td>
+                    <td><label>CPF:</label></td>
+                    <td><input type="text"  pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" name="cpf" id="cpf_pai"></td>
+                    <td><input type="hidden" name="colun9" id="colun9"></td>
+                    <td><input type="hidden" name="colu9" id="colu9"></td>
+                </tr>
+                <tr>
+                    <td><label>Raça:</label></td>
+                    <td><select id="raca">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Branco</option>
+                        <option>Preto</option>
+                        <option>Pardo</option>
+                        <option>Amarelo</option>
+                        <option>Indígena</option>
+                    </select></td>
+                    <td><label>Nacionalidade:</label></td>
+                    <td><input type="text" name="nacionalidade" id="nacionalidade"></td>
+                    <td><input type="hidden" name="colun10" id="colun10"></td>
+                    <td><input type="hidden" name="colu10" id="colu10"></td>
+                </tr>
+                <tr>
+                    <td><label>UF Naturalidade:</label></td>
+                    <td><input type="text" name="naturalidade" id="uf_naturalidade"></td>
+                    <td><input type="hidden" name="coluna11" id="coluna11"></td>
+                    <td><input type="hidden" name="colun11" id="colun11"></td>
+                    <td><input type="hidden" name="colu11" id="colu11"></td>
+                    <td><input type="hidden" name="col11" id="col11"></td>
+                </tr>
+                <tr>
+                    <td><label>Estado Civil:</label></td>
+                    <td><select id="estado_civil">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Solteiro</option>
+                        <option>Casado</option>
+                        <option>Divorciado</option>
+                        <option>Viúvo</option>
+                    </select></td>
+                    <td><label>Cônjuge:</label></td>
+                    <td><input type="text" name="conjuge" id="conjuge"></td>
+                    <td><label>CPF</label></td>
+                    <td><input type="text"  pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" name="cpf" id="cpf_conjuge"></td>
+
+                </tr>
+                <tr>
+                    <td><label>Tipo Sanguíneo:</label></td>
+                    <td><select id="tipo_sanguineo">
+                        <option selected disabled value="">Selecione</option>
+                        <option>A+</option>
+                        <option>B+</option>
+                        <option>AB+</option>
+                        <option>O+</option>
+                        <option>A-</option>
+                        <option>B-</option>
+                        <option>AB-</option>
+                        <option>O-</option>
+                    </select></td>
+                    <td><label>Deficiente:</label></td>
+                    <td><label>
+                            <input type="radio" name="deficiente" value="nao" checked>Não
+                        </label>
+                        <label>
+                            <input type="radio" name="deficiente" value="Sim">Sim
+                        </label></td>
+                        <td><input type="hidden" name="coluna13" id="coluna13"></td>
+                        <td><input type="hidden" name="colun13" id="colun13"></td>
+                </tr>
+                <tr>
+                    <td><label>Grau Intrucao</label></td>
+                    <td><input type="text" name="grau" id="grau_instrucao"></td>
+                    <td><input type="hidden" name="coluna14" id="coluna14"></td>
+                    <td><input type="hidden" name="colun14" id="colun14"></td>
+                    <td><input type="hidden" name="colu14" id="colu14"></td>
+                    <td><input type="hidden" name="col14" id="col14"></td>
+                </tr>
+                <tr>
+                    <td><label>Formação:</label></td>
+                    <td><input type="checkbox" id="formacao1" name="formacao1" value="basica">
+                    <label for="formacao1">Básica</label>
+                    <input type="checkbox" id="formacao2" name="formacao2" value="tecnica">
+                    <label for="formacao2">Tecnica</label>
+                    <input type="checkbox" id="formacao3" name="formacao3" value="superior">
+                    <label for="formacao3">Superior</label></td>
+                    <td><input type="hidden" name="coluna15" id="coluna15"></td>
+                    <td><input type="hidden" name="colun15" id="colun15"></td>
+                    <td><input type="hidden" name="colu15" id="colu15"></td>
+                    <td><input type="hidden" name="col15" id="col15"></td>
+                </tr>
+                <tr>
+                    <td><label>Especialização:</label></td>
+                    <td><textarea name="especializacao" id="especializacao" cols="30" rows="5"></textarea></td>
+                    <td><input type="hidden" name="coluna16" id="coluna16"></td>
+                    <td><input type="hidden" name="colun16" id="colun16"></td>
+                    <td><input type="hidden" name="colu16" id="colu16"></td>
+                    <td><label>Observações:</label><input type="text" name="obs" value="Os dados devem ser preenchidos no formato correto!" size="45"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço de Entrega</legend>
+            <table>
+                <tr>
+                    <td><label>CEP:</label></td>
+                    <td><input type="text" pattern="[0-9]{5}-[0-9]{3}"></td>
+                    <td><input type="hidden" name="coluna2" id="coluna2"></td>
+                    <td><input type="hidden" name="colun2" id="colun2"></td>
+                    <td><input type="hidden" name="colu2" id="colu2"></td>
+                    <td><input type="hidden" name="col2" id="col2"></td>
+                </tr>
+                <tr>
+                    <td><label>Logradouro</label></td>
+                    <td><input type="text" name="logradouro" id="logradouro"></td>
+                    <td><input type="hidden" name="coluna3" id="coluna3"></td>
+                    <td><input type="hidden" name="colun3" id="colun3"></td>
+                    <td><label>Número:</label></td>
+                    <td><input type="number" name="numero" id="endereco_numero"></td>
+                </tr>
+                <tr>
+                    <td><label>Bairro:</label></td>
+                    <td><input type="text" name="bairro" id="bairro"></td>
+                    <td><label>Cidade:</label></td>
+                    <td><input type="text" name="cidade" id="cidade"></td>
+                    <td><label>UF:</label></td>
+                    <td><input type="text" name="uf" id="endereco_uf"></td>
+                </tr>
+                <tr>
+                    <td><label>Complemento:</label></td>
+                    <td><input type="text" name="complemento" id="complemento"></td>
+                    <td><input type="hidden" name="coluna5" id="coluna5"></td>
+                    <td><input type="hidden" name="colun5" id="colun5"></td>
+                    <td><input type="hidden" name="colu5" id="colu5"></td>
+                    <td><input type="hidden" name="col5" id="col5"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+            <table>
+                <tr>
+                    <th colspan="2">Carteira de Identidade</th>
+                    <th colspan="2">Carteira de Trabalho</th>
+                    <th colspan="2">Título de Eleitor</th>
+                    <td><input type="hidden" name="coluna" id="coluna"></td>
+                    <td><input type="hidden" name="colun" id="colun"></td>
+                </tr>
+                <tr>
+                    <td><label>RG:</label></td>
+                    <td><input type="text" pattern="[0-9]{7}-[0-9]{1}" maxlength="9" name="rg" id="rg"/>
+
+                    <td><label>Número:</label></td>
+                    <td><input type="text"  name="numero" id="numero_clt"/></td>
+
+                    <td><label>Número:</label></td>
+                    <td><input type="text"  name="numero" id="numero_te"/></td>
+                    <td><input type="hidden" name="colu" id="colu"></td>
+                    <td><input type="hidden" name="col" id="col"></td>
+                </tr>
+                <tr>
+                    <td><label>Órg Emissor:</label></td>
+                    <td><input type="text" maxlength="6" name="Org" id="org_emissor"/></td>
+
+                    <td><label>Série:</label></td>
+                    <td><input type="text"  name="serie" id="serie_clt"/></td>
+
+                    <td><label>Zona:</label></td>
+                    <td><input type="text"  name="zona" id="zona_te" /></td>
+                    <td><input type="hidden" name="oculto1" id="oculto1"></td>
+                    <td><input type="hidden" name="ocult1" id="ocult1"></td>
+                </tr>
+                <tr>
+                    <td><label>Expedição:</label></td>
+                    <td><input type="date" name="expedicao" id="exp"></td>
+
+                    <td><label>Emissão:</label></td>
+                    <td><input type="date"  name="emissao" id="emissao_clt"/></td>
+
+                    <td><label>Seção:</label></td>
+                    <td><input type="text"  name="secao" id="secao_te" /></td>
+                    <td><input type="hidden" name="oculto2" id="oculto2"></td>
+                    <td><input type="hidden" name="ocult2" id="ocult2"></td>
+                </tr>
+                <tr>
+                    <td><label>UF:</label></td>
+                    <td><input type="text"  maxlength="2" name="UF" id="uf_identidade" size="3" /></td>
+
+                    <td><label>UF:</label></td>
+                    <td><input type="text"  maxlength="2" name="UF" id="uf_clt" size="3"/></td>
+
+                    <td><label>UF. Expedição:</label></td>
+                    <td><input type="text"  maxlength="2" name="expedicao" id="uf_expedicao" /></td>
+                    <td><input type="hidden" name="oculto3" id="oculto3"></td>
+                    <td><input type="hidden" name="ocult3" id="ocult3"></td>
+                </tr>
+                <tr>
+                    <td><input type="hidden" name="coluna17" id="coluna17"></td>
+                    <td><input type="hidden" name="colun17" id="colun17"></td>
+
+                    <td><input type="hidden" name="coluna18" id="coluna18"></td>
+                    <td><input type="hidden" name="colun18" id="colun18"></td>
+
+                    <td><label>Cidade de emissão:</label></td>
+                    <td><input type="text"  name="cidade_emissao" id="cidade_te"/></td>
+                    <td><input type="hidden" name="oculto4" id="oculto4"></td>
+                    <td><input type="hidden" name="ocult4" id="ocult4"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Carteira de Habilitação</th>
+                    <td><input type="hidden" name="coluna19" id="coluna19"></td>
+                    <td><input type="hidden" name="colun19" id="colun19"></td>
+                    <th colspan="4">Outros</th>
+                </tr>
+                <tr>
+                    <td><label>Número:</label></td>
+                    <td><input type="text"  name="numero" id="numero_cnh" /></td>
+
+                    <td><label>PIS/PASEP:</label></td>
+                    <td><input type="text"  name="pis/pasep" id="pis/pasep"/></td>
+                    <td><input type="hidden" name="coluna20" id="coluna20"></td>
+                    <td><input type="hidden" name="colun20" id="colun20"></td>
+                    <td><input type="hidden" name="colu20" id="colu20"></td>
+                    <td><input type="hidden" name="col20" id="col20"></td>
+                </tr>
+                <tr>
+                    <td><label>Categoria:</label></td>
+                    <td><input type="text"  name="categoria" id="categoria" /></td>
+
+                    <td><label>Reservista:</label></td>
+                    <td><input type="text"  name="reservista" id="reservista"/></td>
+                    <td><input type="hidden" name="coluna21" id="coluna21"></td>
+                    <td><input type="hidden" name="colun21" id="colun21"></td>
+                    <td><input type="hidden" name="colu21" id="colu21"></td>
+                    <td><input type="hidden" name="col21" id="col21"></td>
+                </tr>
+                <tr>
+                    <td><label>Validade:</label></td>
+                    <td><input type="date"  name="validade" id="validade"/></td>
+
+                    <td><label>Reg. Profissional:</label></td>
+                    <td><input type="text"  name="reg_profissional" id="reg_profissional"/></td>
+
+                    <td><label>Entidade de Classe:</label></td>
+                    <td><input type="text"  name="entidade_de_classe" id="entidade_classe"/></td>
+                    <td><label>Status:</label></td>
+                    <td><input type="text"  name="status" id="status"/></td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+    </form> 
+</body>
+</html>
